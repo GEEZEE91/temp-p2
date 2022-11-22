@@ -1,0 +1,21 @@
+<navbar class="navbar">
+    <a href="/dashboard"><div class="navbar-brand app-title">Event-a-GRAM</div></a>
+    {{#if loggedIn}}
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+        <ul>
+            {{!-- <li><a href="#" class="navbar-item about">About OUIII</a></li> --}}
+            <li><a href="#" class="navbar-item search-party-modal">Search for Parties</a></li>
+            <li><a href="#" class="navbar-item create-party-modal">Create a Party</a></li>
+            <li><a href="/dashboard" class="navbar-item my-parties">My Parties</a></li>
+            <li><a href="" class="navbar-item my-account">My Account</a></li>
+            <li><a href="" id="logoutBtn" class="navbar-item logout-button">Logout</a></li>
+        </ul>
+    </div>
+    {{/if}}
+</navbar>
+
