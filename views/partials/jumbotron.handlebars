@@ -1,12 +1,13 @@
-<div id="hero-frame">
- <div class="hero-tite-container">
-            <h1 id="headline">Find, Create, Schedule, Share, Review Events Together</h1>
+<div id="hero">
+ <div class="hero-container">
+            <div class="app-slogan">Find, Create, Schedule, Share, Review Events Together</div>
+
+
             <div class="hero-btn-container">
                 {{#if logged_in}}
-                <a id="hero-sign-in-btn" class="hero-btn" href="/logout">Dashboard</a>
+                <a id="hero-sign-in-btn" class="hero-btn" type="hero-btn" href="/logout"></a>
                 {{else}}
-                <a id="hero-sign-in-btn" class="hero-btn" href="/login">Sign Up Today</a>
-          
+                <a id="hero-sign-in-btn" class="hero-btn" type="hero-btn" href="/login">Sign Up Today</a>
                 {{/if}}
             </div>
           </div>

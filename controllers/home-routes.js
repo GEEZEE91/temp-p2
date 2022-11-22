@@ -57,7 +57,7 @@ router.get('/dashboard', async (req, res) => {
           },
         ],
       });
-      // console.log(dbPartyData);
+     console.log(dbPartyData);
 
       const parties = dbPartyData.map((gallery) =>
         gallery.get({ plain: true })
@@ -72,7 +72,7 @@ router.get('/dashboard', async (req, res) => {
     }
 
     // otherwise if loggedIn is false, redirect to login view
-    res.redirect('login');
+    res.redirect('/login');
     
   } catch (err) {
     console.log(err);
@@ -82,12 +82,12 @@ router.get('/dashboard', async (req, res) => {
 
 // SHOW searchresults
 router.get('/search/:ispublic/:isover18/:theme_id', async (req, res) => {
-  console.log('**************** inside home-routes/search/:ispublic/isover18/:theme_id ***************');
+  console.log('**************** inside home-routes/search/:ispublic/:isover18/:theme_id ***************');
   console.log('req.session.loggedIn value is', req.session.loggedIn);
   console.log(typeof req.params.ispublic, typeof req.params.isover18, typeof req.params.theme_id);
 
-  const ispublic = req.params.ispublic === "true";
-  const isover18 = req.params.isover18 === "true";
+  const ispublic = req.params.ispublic = "true";
+  const isover18 = req.params.isover18 = "true";
   const theme_id = parseInt(req.params.theme_id);
 
   if(req.session.loggedIn) {
@@ -141,7 +141,7 @@ router.get('/party/:id', async (req, res) => {
     });
 
     if(!dbPartyData) {
-      res.redirect('/dashboard');
+      res.redirect('dashboard');
       // res.status(404).json( {message: "Resource does not exist"} );
       return;
     }

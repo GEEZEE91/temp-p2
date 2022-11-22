@@ -1,30 +1,72 @@
+ZERO OUT ANY USER-AGENT-ASSIGNED MARGINS, PADDINGS, ETC. :root{
+    --dark-green: #5F6C5A;
+    --yellow: #ffffff;
+    --orange: #F78E69;
+    --red: #D16666;
+    --white: #FCFCFC;
+    --black: #02111B;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Fredoka One', cursive; */
+}
+
+html, body {
+    height: 100%;
+}
+
+/*Setting up the h1 - h6 tags with the font-sizes*/
+h1 {
+    font-size: 4rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Fredoka One', cursive;
     font-family: 'Montserrat';
-    color: #472352;
-} 
+}
 
 body {
-    background-color: #EEE6E6;
+    background-color: #cfd8dc;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: pink;
-    color: #472353;
+    align-items: end;
+    background-color: #180318;
+    color: #eae7ec;
     box-shadow: 0px 0px 5px #dadccf;
+    padding: 2rem;
 }
 
 .app-title {
-    font-family: 'Montserrat';
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 6rem;
     margin: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 45rem;
 }
 
 .navbar-links ul {
@@ -39,14 +81,16 @@ body {
 
 .navbar-links li a {
     text-decoration: none;
-    color: #472353;
+    color: rgb(235, 196, 246);
     font-weight: bold;
     padding: 1rem;
     display: block;
+    float: right ;
+    font-size: 1.8rem;
 }
 
 .nav-list {
-    background: #dcc5c5;
+    background: #ffffff;
     margin: 0;
     padding: 1rem 0;
     border-radius: 8px;
@@ -61,8 +105,8 @@ body {
 }
 
 .navbar-links li a:hover {
-    color: #EEE6E6;
-    background-color: #b26cdd;
+    color: #ffffff;
+    background-color: #1dd0d7;
     border-radius: 30px;
 }
 
@@ -85,17 +129,16 @@ body {
 .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: #472353;
+    background-color: #faf8f8;
     border-radius: 10px;
 }
 
 .modal-background {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    background-color: rgba(38, 43, 44, 0.71);
     display: flex;
     visibility: hidden;
     justify-content: center;
@@ -109,8 +152,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    background-color: rgba(38, 43, 44, 0.71);
     display: flex;
     visibility: hidden;
     justify-content: center;
@@ -124,8 +167,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    background-color: rgba(38, 43, 44, 0.71);
     display: flex;
     visibility: hidden;
     justify-content: center;
@@ -143,27 +186,34 @@ body {
 }
 
 .form-header {
-    font-size: 24px;
     padding: 10px;
     margin: 10px;
 }
 
 .party-card {
     display: flex;
-    margin: 35px;
+    margin: 25px;
     border-radius: 30px;
-    color: #dcc5c5;
-    box-shadow: 0px 0px 5px #cfd8dc;
+    color: rgba(120, 215, 213, 0.55);
+    box-shadow: 0px 0px 5px rgba(120, 215, 213, 0.55);
 }
 
 .card-header {
-    font-size: 1.25rem;
-    padding: 20px;
+    font-size: 2rem;
+    padding: 10px;
 }
+
+
+.card-footer{
+    background-color: #ebc4f6;
+
+
+}
+
 
 .party-image {
     display: flex;
-    width: 400px;
+    width: 350px;
 }
 
 .card-date {

@@ -19,7 +19,7 @@ const partydata = [
   },
   {
     startdate: '2022-04-18',
-    title: 'Let\'s get fancy!!!',
+    title: 'Lets get fancy!!!',
     ispublic: false,
     isover18: true,
     user_id: 1,
@@ -51,7 +51,7 @@ const partydata = [
   },
   {
     startdate: '2022-05-20',
-    title: 'Good ol\' kegger. BYOB!',
+    title: 'Good ol kegger. BYOB!',
     ispublic: true,
     isover18: true,
     user_id: 1,

@@ -1,15 +1,15 @@
-<!-- Modal: Create Party -->
+<!-- Modal: Create Event -->
 <div id="create-modal" class="modal">
     <div class="create-modal-background"></div>
     <div class="modal-card">
         <header class="modal-card-head">
-            <p class="modal-card-title">Create A Party</p>
+            <h2 class="modal-card-title">Create an Event</h2>
             <button class="delete" id="create-delete" aria-label="close"></button>
         </header>
         <section class="modal-card-body">
             <form id="create-form" class="create-party-form">
                 <div class="container is-fluid mb-4">
-                    <label for="title">Title:</label>
+                   <p><label for="title">Event Title:</label></p>
                     <div class="control" id="create-title">
                         <input class="input is-rounded m-1" id="createPartyTitle" type="text"
                             style="background-color:#EEE6E6">
@@ -18,31 +18,30 @@
                 <hr>
                 <div class="container is-fluid mb-4">
                     <div class="check-public">
-                        Is this party <label for="createPartyPublic">public</label>
+                        <p>Is this party <label for="createPartyPublic">Public</label>
                         <input type="checkbox" name="public" id="createPartyPublic" value="true" />
-                        <label for="createPartyPrivate"> or private</label>
-                        <input type="checkbox" name="private" id="createPartyPrivate" value="false" />
-                        <p>Your choice determines whether the party will be discoverable on searches by other
-                            users.</p>
+                            <label for="createPartyPrivate"> or Private</label>
+                        <input type="checkbox" name="private" id="createPartyPrivate" value="false" /></p>
+                        <p class="font-style=italic mb">*Public events will be discoverable on searches by other users.</p>
                     </div>
                 </div>
                 <hr>
                 <div class="container is-fluid mb-4">
                     <div class="check-age is-flex">
-                        <p>Is age minimum strictly 18 years age and older?</p>
+                        <p>Is this event 18+??
                         <div class="ml-2">
                             <input type="radio" name="age-confirm" id="createIsOver18True" />
                             <label for="createIsOver21True">Yes</label>
                         </div>
                         <div class="ml-2">
                             <input type="radio" name="age-confirm" id="createIsOver18False" />
-                            <label for="createIsOver18False">No</label>
+                            <label for="createIsOver18False">No</label></p>
                         </div>
                     </div>
                 </div>
                 <hr>
                 <div class="container is-fluid mb-4 is-flex">
-                    <label for="title">Select the theme:</label>
+                    <p><label for="title">Select Event Category:</label>
                     <div class="select is-rounded ml-2">
                         <select id="createPartyTheme" style="background-color:#EEE6E6">
                             <option value="1" selected>costume</option>
@@ -50,15 +49,15 @@
                             <option value="3">tailgate</option>
                             <option value="4">fancy cocktails</option>
                             <option value="5">dinner</option>
-                        </select>
+                        </select></p>
                     </div>
                 </div>
                 <hr>
                 <div class="container is-fluid mb-4">
-                    <label for="title">On what date will your party take place?</label>
+                    <p>  <label for="title">Event Date</label>
                     <div class="control has-icons-left has-icons-right">
                         <input class="input is-rounded m-1" id="createPartyStartDate" type="date"
-                            style="background-color:#EEE6E6">
+                            style="background-color:#EEE6E6"></p>
                     </div>
                 </div>
                 <hr>

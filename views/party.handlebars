@@ -3,7 +3,7 @@
 
 <div class="card column mx-auto is-two-thirds-tablet is-half-desktop is-one-third-widescreen">
     <header class="card-header">
-        <p class="card-header-title is-centered">You named your party: {{party.title}}</p>
+        <p class="card-header-title is-centered">You named your EVENT: {{party.title}}</p>
     </header>
     <div class="card-image">
         <figure class="image mx-auto">
@@ -12,34 +12,33 @@
     </div>
     <div class="card-content">
         <div class="content">
-            Your party is set to happen on {{party.startdate}}.
+            Your EVENT is set to happen on {{party.startdate}}.
             <hr>
             {{#if party.ispublic}}
-            Your party is open to the public (not private).
+            Your EVENT is open to the public (not private).
             <hr>
             {{else}}
-            Your party is private (not open to the public).
+            Your EVENT is private (not open to the public).
             <hr>
             {{/if}}
             {{#if party.isover18}}
-            And you made your party strictly 18+ years of age and older.<br>
-            (Better card your guests!)
+            And you made your EVENT strictly 18+ years of age and older.<br>
+
             <hr>
             {{else}}
-            And you made your party open to minors.
-            <hr>
-            (Better ensure strict adherence to alcohol consumption laws!).
+            And you made your EVENT open to minors.
+
             <hr>
             {{/if}}
-            Lastly, your party's theme is '{{party.theme.theme_description}}', in keeping with
+            Lastly, your EVENT catergory is '{{party.theme.theme_description}}', in keeping with
             the photo above!
         </div>
     </div>
 
-    <div class="card-footer has-background-warning is-flex-direction-column">
-        <a href="#" class="card-footer-item" id="editPartyBtn">Edit this party's details. (JS LOGIC MISSING!)</a>
-        <a href="#" class="card-footer-item" id="deletePartyBtn">Delete this party</a>
-        <a href="#" class="card-footer-item" id="goToDashboardBtn">Go back to my dashboard</a>
+    <div class="card-footer is-flex-direction-column">
+        <a href="" class="card-footer-item" id="editPartyBtn">Edit this EVENT's details. (JS LOGIC MISSING!)</a>
+        <a href="" class="card-footer-item" id="deletePartyBtn">Delete EVENT</a>
+        <a href="/dashboard" class="card-footer-item" id="goToDashboardBtn">Return to Dashboard</a>
     </div>
 </div>
 

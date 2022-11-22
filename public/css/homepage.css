@@ -1,10 +1,10 @@
-/* ZERO OUT ANY USER-AGENT-ASSIGNED MARGINS, PADDINGS, ETC. :root{
-    --dark-green: #5F6C5A;
-    --yellow: #E9C46A;
-    --orange: #F78E69;
-    --red: #D16666;
-    --white: #FCFCFC;
-    --black: #02111B;
+ZERO OUT ANY USER-AGENT-ASSIGNED MARGINS, PADDINGS, ETC. :root{
+    --dark-green: #daf1d3;
+    --yellow: #ffffff;
+    --orange: #0bf6de;
+    --red: #00ffbe;
+    --white: #ffffff;
+    --black: rgb(235, 196, 246);
 }
 
 
@@ -58,7 +58,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;;
-    background-color: rgba(161, 86, 202, 0.692);
+    background-color: rgba(125, 86, 202, 0.96);
     background-size: 50%;
     padding: 10px 35px; 
     display: flex;
@@ -71,74 +71,48 @@ p {
     font-weight: bold;
     color: #f8f8f8;
 }
-.navBtns{
-    display: flex;
-margin-top: 20px;   
-}
-
 
 .enter-btn {
     font-size: 1.3em;
-    font-weight: medium;
+    font-weight: 600;
     border-width: 0;
-    box-shadow: 2px 1px 5px #01000035;
+    box-shadow: 2px 1px 5px rgba(252, 252, 252, 0.21);
     background-image: linear-gradient(135deg, #28979f 0%, #0dcdbd 100%);
     border-radius: 3px;
     color: rgb(253, 251, 251);
     padding: 15px;
-    margin: 15px;  
+    margin: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}  * .enter-btn:hover {
+       color: #034f56;
 }
 
-.enter-btn a:hover{
-    text-decoration: none;
-    background-color: var(--yellow);
-}
-
-.action {
-    margin-top: 25%;
-    max-height: 10vh;
-    background-size: cover;
-    display: flex;
-    padding: 5px;
-}
-
-#hero-frame {
-    background-image: url('../images/banner_bg.jpg');
-    background-size: cover;
-    height: 80%;
-    background-position: 10% 25%;
-    /* justify-content: center; */
-    display: flex; 
-    opacity: 90%;
-    color:aliceblue;
-    /* align-items: flex-start; */
-    /* background-attachment: fixed; */
-    /* flex-wrap: wrap; */
-    /* background-position: 10%; */
-}
 
 .app-slogan {
-    font-size: 68px;
+    font-size: 5rem;
     display: flex;
-    align-items: center;
-    color: rgb(11, 12, 12);
+    align-items: start;
+    color: #ffffff;
+    margin-left: 1vw;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
 }
 
-.app-slogan h3 {
-    color: #ffffff;
-    font-size: 3rem;
-    margin-left: 5vw;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 
 footer {
-   background-color: rgba(171, 4, 101, 0.589);
+    padding-top: 6px;
+    background-color: rgb(38, 2, 24);
 }
 
 footer p {
     text-align: center;
     font-size: 2em;
     height: 10vh;
+    color: white;
 
 }
 
@@ -148,72 +122,42 @@ footer p {
     justify-content: center;
     align-items: center;
     margin-top: 0rem;
+    background-image: url('../images/banner_bg.jpg');
+
+
 }
-.hero-row{
-    height: 100vh !important;
-}
+
 .hero{
-    height: 60%;
+    height: 100%;
     width: 100%;
     position: relative;
 }
-.hero::after{
-    content: "";
-    background: #000;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0.3;
-}
-.hero img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-#headline{
-    color: var(--white);
-    z-index: 3;
-}
-.hero-tite-container{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    top: 40%;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    position: absolute;
-}
-.hero-tite-container h1{
-    font-weight: 500;
-    font-size: 6rem;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 0rem 0rem 2rem 0rem;
-}
+
 .hero-btn-container{
-    padding: 2rem, 0rem;
-    margin-top: 20vh;
-    margin-left: 55vw;
-}
-.hero-btn-container a{
+     margin-top: 30rem;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-width: 0;
+    box-shadow: 2px 1px 5px rgba(252, 252, 252, 0.21);
+    background-image: linear-gradient(135deg, #28979f 0%, #0dcdbd 100%);
+    border-radius: 3px;
+    color: rgb(253, 251, 251);
+    padding: 15px;
     padding: 2.5rem 5rem;
-    margin: 0rem 1rem;
-    background: var(--red);
-    color: var(--white);
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 600;
     font-size: 2rem;
 }
-.hero-btn-container a:hover{
+.hero-btn-container :hover{
     text-decoration: none;
-    background-color: var(--yellow);
+    background: #de1313);
+    color: #034f56;
 }
 .hero-btn{
     border-radius: 4px;
-    font-weight: 500;
+    font-weight: 800;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: white;
 }

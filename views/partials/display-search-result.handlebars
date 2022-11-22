@@ -9,14 +9,15 @@
     </header>
     <div class="card-content">
         <div class="content">
-            The host of this party is {{user.firstname}} {{user.lastname}}.
+            The host of this event is {{user.firstname}} {{user.lastname}}.
             <hr>
-            The host has labeled the event as a {{theme.theme_description}} party.
+            The host has labeled the event as a {{theme.theme_description}} event.
             <hr>
-            The party is scheduled to happen on {{startdate}}.
+            The event is scheduled to happen on {{startdate}}.
             <hr>
             {{#if ispublic}}
             It's open to the public--consider swinging by!
+
             <a href="">Send host an email</a>
             <hr>
             {{else}}
@@ -27,16 +28,16 @@
             The age minimum is 18 years old.
             <hr>
             {{else}}
-            The party is open to minors.
+            The event is open to minors.
             <hr>
             {{/if}}
         </div>
     </div>
 
-    <div class="card-footer has-background-warning is-flex-direction-column">
+    <div class="card-footer is-flex-direction-column">
         {{#if ispublic}}
         <a href="#" class="card-footer-item" id="sendHostEmailBtn">Send host an email invitation</a>
         {{/if}}
-        <a href="/dashboard" class="card-footer-item" id="goToDashboardBtn">Go back to my dashboard</a>
+        <a href="/dashboard" class="card-footer-item" id="goToDashboardBtn">Go back to my Dashboard</a>
     </div>
 </div>
