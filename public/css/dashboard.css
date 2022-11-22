@@ -194,13 +194,16 @@ body {
     display: flex;
     margin: 25px;
     border-radius: 30px;
-    color: rgba(120, 215, 213, 0.55);
+    color: rgba(14, 239, 235, 0.55);
     box-shadow: 0px 0px 5px rgba(120, 215, 213, 0.55);
 }
 
 .card-header {
     font-size: 2rem;
-    padding: 10px;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
 }
 
 

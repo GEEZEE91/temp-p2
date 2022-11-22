@@ -51,9 +51,9 @@ async function createPartyHandler(event) {
 
     if (response.ok) {
         alert('Your party has been succesfully created!');
-        modal.classList.remove('is-active');
+        createModal.classList.remove('is-active');
         // after the modal is removed, refresh the dashboard so the new party shows
-        document.location.replace('dashboard');
+        document.location.replace('/dashboard');
     } else {
         alert(response.statusText);
     }
