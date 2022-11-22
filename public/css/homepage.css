@@ -1,4 +1,4 @@
-ZERO OUT ANY USER-AGENT-ASSIGNED MARGINS, PADDINGS, ETC. :root{
+:root{
     --dark-green: #daf1d3;
     --yellow: #ffffff;
     --orange: #0bf6de;
@@ -151,7 +151,7 @@ footer p {
 }
 .hero-btn-container :hover{
     text-decoration: none;
-    background: #de1313);
+    background: #b08b78;
     color: #034f56;
 }
 .hero-btn{
