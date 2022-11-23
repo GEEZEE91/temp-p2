@@ -86,8 +86,8 @@ router.get('/search/:ispublic/:isover18/:theme_id', async (req, res) => {
   console.log('req.session.loggedIn value is', req.session.loggedIn);
   console.log(typeof req.params.ispublic, typeof req.params.isover18, typeof req.params.theme_id);
 
-  const ispublic = req.params.ispublic = "true";
-  const isover18 = req.params.isover18 = "true";
+  const ispublic = req.params.ispublic === "true";
+  const isover18 = req.params.isover18 === "true";
   const theme_id = parseInt(req.params.theme_id);
 
   if(req.session.loggedIn) {
