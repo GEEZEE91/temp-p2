@@ -27,9 +27,7 @@ async function goToDashboardHandler(event) {
     document.location.replace('/dashboard');
 }
 
-// document.querySelector('#editPartyBtn').addEventListener('click', editPartyHandler);
-// document.querySelector('#deletePartyBtn').addEventListener('click', deletePartyHandler);
-// document.querySelector('#goToDashboardBtn').addEventListener('click', goToDashboardHandler);
+
 document.getElementById('editPartyBtn').addEventListener('click', editPartyHandler);
 document.getElementById('deletePartyBtn').addEventListener('click', deletePartyHandler);
 document.getElementById('goToDashboardBtn').addEventListener('click', goToDashboardHandler);

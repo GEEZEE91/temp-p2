@@ -20,7 +20,7 @@ Theme.init(
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                isIn: [['costume', 'kegger', 'tailgate', 'fancy cocktails', 'dinner']]
+                isIn: [['costume', 'birthday', 'sports', 'fancy cocktails', 'dinner']]
             }
         }
     },

@@ -5,10 +5,10 @@ const themedata = [
     theme_description: 'costume'
   },
   {
-    theme_description: 'kegger'
+    theme_description: 'birthday'
   },
   {
-    theme_description: 'tailgate'
+    theme_description: 'sports'
   },
   {
     theme_description: 'fancy cocktails'
