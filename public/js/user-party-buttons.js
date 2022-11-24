@@ -28,6 +28,6 @@ async function goToDashboardHandler(event) {
 }
 
 
-document.getElementById('editPartyBtn').addEventListener('click', editPartyHandler);
+// document.getElementById('editPartyBtn').addEventListener('click', editPartyHandler);
 document.getElementById('deletePartyBtn').addEventListener('click', deletePartyHandler);
 document.getElementById('goToDashboardBtn').addEventListener('click', goToDashboardHandler);

@@ -1,12 +1,18 @@
-{{!-- pull in partial view 'navbar' --}}
-{{!-- {{> navbar}}
+  {{!-- favorites --}}
+        <h3 class="mt-5">Your Favourite Events</h3>
+        <div class="row mt-2">
+            {{#each userInfo}}
+            <div class="col-sm-6 col-md-4">
+                <div class="card ">
+                    <div class="card-img body "><img src="/images/{{theme.theme_description}}.png" alt="{{theme.theme_description}}">
+                        <h3 class=" card-header card-title mb-5">{{events}}</h3>
+                        <div class="d-flex">
+                            <a class=" mr-2 btn btn-info" href="/parties/?{{_id}}">View more</a>
 
-<section class="about-section">
-    <div class="column is-half">
-        <h1>About OUIII:</h1>
-        <p>
-            OUIII pronounced "we" is an application designed to find and create parties and meetups in your area.    Our mission is to help make it easier to connect and have fun on a geo-location based platform.  
-            Create a party with various themes in mind, 
-        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
     </div>
-</section> --}}

@@ -70,7 +70,7 @@ async function searchPartyHandler(event) {
     const theme_id = document.getElementById('searchPartyTheme').value.trim();
 
     // check that there is at least one qualifying condition from the above constants
-    if(!(( ispublic || ispublicfalse ) && (isover18 || isover18false ) && theme_id)) {
+    if(!(( ispublic || ispublicfalse ) && (isover18 || isover18false ) || theme_id)) {
         alert('Please ensure you are inputting a value for public/private, age minimum, and party theme.');
         return;
     }

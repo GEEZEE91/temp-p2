@@ -1,0 +1,39 @@
+
+img {
+    display: block;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.details {
+    padding: 10px;
+}
+
+.like {
+    width: 48px;
+    height: 48px;
+    position: absolute; 
+    top: 83%; 
+    right: 12%; 
+
+}
+
+.like-no {
+    background: url("../images/dislike.svg") ;
+}
+
+.like-yes {
+    background: url("../images/like.svg") ;
+background-color: red;
+}
+
+.fav btn{
+    background: url("../images/like.svg");
+
+
+}
+@media only screen and (min-width: 768px) {
+    article:last-child {
+      margin-bottom: 0;
+    }
+  }

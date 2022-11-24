@@ -10,8 +10,8 @@
             <form id="search-party-form">
                 <!-- option to search distance can be added here -->
                 <div class="container is-fluid mb-4">
-                    <div class="check-age">
-                        Do you want to see public EVENTS or private EVENTS?<br>
+                    <div class="check-public">
+                        Do you want to see public EVENTS or private EVENTS<br>
                         <input type="radio" name="radio-publicOrPrivate" id="searchPartyPublic" class="ml-2" />
                         <label for="searchPartyPublic">Only public</label>
                         <input type="radio" name="radio-publicOrPrivate" id="searchPartyPrivate" class="ml-2" />
@@ -21,24 +21,27 @@
                 <hr>
                 <div class="container is-fluid mb-4">
                     <div class="check-age">
-                        Age min 18+ years:
-                        <input type="radio" name="age-confirm" id="searchIsOver18True" class="ml-2" />
+                        Age min 18+
+                        <input type="radio" name="radio-age-confirm" id="searchIsOver18True" class="ml-2" />
                         <label for="searchIsOver18True">Yes</label>
-                        <input type="radio" name="age-confirm" id="searchIsOver18False" class="ml-2" />
+                        <input type="radio" name="radio-age-confirm" id="searchIsOver18False" class="ml-2" />
                         <label for="searchIsOver18False">No</label>
                     </div>
                 </div>
                 <hr>
                 <div class="container is-fluid mb-4">
-                    <label for="title">Select Event category?</label>
+                    <label for="title">Select Event Category</label>
                     <div class="select is-rounded">
-                        <select id="searchPartyTheme" class="theme" style="background-color:#EEE6E6">
+                        <select id="searchPartyTheme" class="theme" style="background-color:#a66fa697">
                             <option value="" selected>--Leave unselected to disregard theme--</option>
                             <option value="1">costume party</option>
                             <option value="2">birthday party</option>
                             <option value="3">sports event</option>
                             <option value="4">cocktail party</option>
                             <option value="5">dinner party</option>
+                            <option value="6">christmas party</option>
+                            <option value="7">australia day</option>
+                            <option value="8">2023 nye</option>
                         </select>
                     </div>
                 </div>

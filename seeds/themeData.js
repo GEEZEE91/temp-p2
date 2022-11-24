@@ -15,6 +15,15 @@ const themedata = [
   },
   {
     theme_description: 'dinner party'
+  },
+  {
+    theme_description: 'christmas party'
+  },
+  {
+    theme_description: 'australia day'
+  },
+  {
+    theme_description: '2023 nye'
   }
 ];
 

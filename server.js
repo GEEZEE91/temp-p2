@@ -9,7 +9,7 @@ const sequelize = require('./config/connection');
 const helpers = require('./utils/helpers');
 
 const app = express();
-const PORT = process.env.PORT || 3009;
+const PORT = process.env.PORT || 3003;
 
 const sess = {
   secret: 'Super secret secret',

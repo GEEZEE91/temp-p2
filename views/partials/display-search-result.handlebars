@@ -1,12 +1,14 @@
 <div class="card column mx-auto mt-5 is-two-thirds-tablet is-one-third-desktop is-one-quarter-widescreen"> {{!--  is-two-thirds-tablet --}}
+     <header class="card-header">
+        <h4 class="card-header-title is-centered"> {{title}}</h4>
+    </header>
+    
     <div class="card-image">
         <figure class="image mx-auto">
             <img src="/images/{{theme.theme_description}}.png" alt="{{theme.theme_description}}">
         </figure>
     </div>
-    <header class="card-header">
-        <p class="card-header-title is-centered">Party: {{title}}</p>
-    </header>
+   
     <div class="card-content">
         <div class="content">
             The host of this event is {{user.firstname}} {{user.lastname}}.
@@ -16,9 +18,7 @@
             The event is scheduled to happen on {{format_date startdate}}.
             <hr>
             {{#if ispublic}}
-            It's open to the public--consider swinging by!
-
-            <a href="">Send host an email</a>
+            It's open to the public -- consider swinging by!
             <hr>
             {{else}}
             The host marked this event as private. 
@@ -31,13 +31,22 @@
             The event is open to minors.
             <hr>
             {{/if}}
+           
+            Contact the Host for additional Event Details and Bookings
+            <h6><a href="mailto:{{user.email}}">{{user.email}}</a></h6>
         </div>
-    </div>
 
-    <div class="card-footer is-flex-direction-column">
-        {{#if ispublic}}
-        <a href="#" class="card-footer-item" id="sendHostEmailBtn">Send host an email invitation</a>
-        {{/if}}
-        <a href="/dashboard" class="card-footer-item" id="goToDashboardBtn">Go back to my Dashboard</a>
+          {{!-- <form action="/party?id={{_id}}" method="POST"> --}}
+            <button class="like" id="btn fav btn" type="submit"> 🤍 </button>
+               
+                
+                <br>
+               
+         <div class="card-footer is-flex-direction-column">
+        <h5 class="color-white"><a href="/dashboard" class="card-footer-item" id="goToDashboardBtn">Go back to my Dashboard</a></h5>
     </div>
-</div>
+     </div>
+      </div>
+   
+
+   
