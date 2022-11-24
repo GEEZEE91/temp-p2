@@ -2,32 +2,32 @@ const { User } = require('../models');
 
 const userdata = [
   {
-    firstname: 'James',
-    lastname: 'Compagnoni',
-    email: 'james@aol.com',
-    age: 34,
-    address: '1320 South Dixie Highway, Coral Gables, FL 33146'
+    firstname: 'Ash',
+    lastname: 'Smith',
+    email: 'ash@gmail.com',
+    age: 40,
+    address: '13 West Coast Drive, Trigg, WA 6019'
   },
   {
-    firstname: 'Ashok',
-    lastname: 'Nayakii',
-    email: 'ashok.nayakii@gmail.com',
-    age: 34,
-    address: '11011 SW 104th St, Miami, FL 33176'
+    firstname: 'Gina',
+    lastname: 'Anderson',
+    email: 'gina@gmail.com',
+    age: 24,
+    address: '11 Parade Drive, Dalkeith WA 6090'
   },
   {
-    firstname: 'Camilo',
-    lastname: 'Restrepo',
-    email: 'crest020@fiu.edu',
+    firstname: 'Zubair',
+    lastname: 'Thagreat',
+    email: 'zub@gmail.com',
     age: 34,
-    address: '777 Glades Rd, Boca Raton, FL 33431'
+    address: '23 Forest Road, Peppermint Grove WA 6990'
   },
   {
-    firstname: 'Asha',
-    lastname: 'Dorsey',
-    email: 'ashadorsey@gmail.com',
+    firstname: 'Sally',
+    lastname: 'Smith',
+    email: 'sally@gmail.com',
     age: 34,
-    address: '300 NE 2nd Ave, Miami, FL 33132'
+    address: '22 Neverland Street, Perth WA 6000'
   }
 ];
 

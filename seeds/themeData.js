@@ -2,19 +2,19 @@ const { Theme } = require('../models');
 
 const themedata = [
   {
-    theme_description: 'costume'
+    theme_description: 'costume party'
   },
   {
-    theme_description: 'birthday'
+    theme_description: 'birthday party'
   },
   {
-    theme_description: 'sports'
+    theme_description: 'sports event'
   },
   {
-    theme_description: 'fancy cocktails'
+    theme_description: 'cocktail party'
   },
   {
-    theme_description: 'dinner'
+    theme_description: 'dinner party'
   }
 ];
 
