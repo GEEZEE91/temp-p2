@@ -1,0 +1,258 @@
+:root{
+    --dark-green: #5F6C5A;
+    --yellow: #ffffff;
+    --orange: #F78E69;
+    --red: #D16666;
+    --white: #FCFCFC;
+    --black: #02111B;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/*Setting up the h1 - h6 tags with the font-sizes*/
+h1 {
+    font-size: 4rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Fredoka One', cursive;
+    font-family: 'Montserrat';
+}
+
+body {
+    background-color: #cfd8dc;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: #180318;
+    color: #eae7ec;
+    box-shadow: 0px 0px 5px #dadccf;
+    padding: 2rem;
+}
+
+.app-title {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 6rem;
+    margin: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 45rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: rgb(235, 196, 246);
+    font-weight: bold;
+    padding: 1rem;
+    display: block;
+    float: right ;
+    font-size: 1.8rem;
+}
+
+.nav-list {
+    background: #ffffff;
+    margin: 0;
+    padding: 1rem 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li a:hover {
+    color: #ffffff;
+    background-color: #1dd0d7;
+    border-radius: 30px;
+}
+
+.logout-button {
+    /* border-radius: 30px; */
+    padding: 1rem;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2.25rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #faf8f8;
+    border-radius: 10px;
+}
+
+.modal-background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 43, 44, 0.71);
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.search-modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 43, 44, 0.71);
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.create-modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 43, 44, 0.71);
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+.is-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tile {
+    margin-top: 20px;
+}
+
+.form-header {
+    padding: 10px;
+    margin: 10px;
+}
+
+.party-card {
+    display: flex;
+    margin: 25px;
+    border-radius: 30px;
+    color: rgba(14, 239, 235, 0.55);
+    box-shadow: 0px 0px 5px rgba(120, 215, 213, 0.55);
+}
+
+.card-header {
+    font-size: 2rem;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+
+.card-footer{
+    background-color: #ebc4f6;
+
+
+}
+
+
+.party-image {
+    display: flex;
+    width: 350px;
+}
+
+.card-date {
+    justify-content: center;
+}
+
+@media (max-width: 750px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+

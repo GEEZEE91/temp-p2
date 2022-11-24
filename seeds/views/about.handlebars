@@ -1,0 +1,18 @@
+  {{!-- favorites --}}
+        <h3 class="mt-5">Your Favourite Events</h3>
+        <div class="row mt-2">
+            {{#each userInfo}}
+            <div class="col-sm-6 col-md-4">
+                <div class="card ">
+                    <div class="card-img body "><img src="/images/{{theme.theme_description}}.png" alt="{{theme.theme_description}}">
+                        <h3 class=" card-header card-title mb-5">{{events}}</h3>
+                        <div class="d-flex">
+                            <a class=" mr-2 btn btn-info" href="/parties/?{{_id}}">View more</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>

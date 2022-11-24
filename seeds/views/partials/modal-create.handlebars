@@ -1,0 +1,74 @@
+<!-- Modal: Create Event -->
+<div id="create-modal" class="modal">
+    <div class="create-modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <h2 class="modal-card-title">Create an Event</h2>
+            <button class="delete" id="create-delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+            <form id="create-form" class="create-party-form">
+                <div class="container is-fluid mb-4">
+                   <p><label for="title">Event Title</label></p>
+                    <div class="control" id="create-title">
+                        <input class="input is-rounded m-1" id="createPartyTitle" type="text"
+                            style="background-color:#a66fa697">
+                    </div>
+                </div>
+                <hr>
+                <div class="container is-fluid mb-4">
+                    <div class="check-public">
+                        <p>Is this EVENT <label for="createPartyPublic">Public</label>
+                        <input type="checkbox" name="public" id="createPartyPublic" value="true" />
+                            <label for="createPartyPrivate"> or Private</label>
+                        <input type="checkbox" name="private" id="createPartyPrivate" value="false" /></p>
+                        <p class="font-style=italic mb">*Public events will be discoverable on searches by other users.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="container is-fluid mb-4">
+                    <div class="check-age is-flex">
+                        <p>Is this event 18+ 
+                        <div class="ml-2">
+                            <input type="radio" name="age-confirm" id="createIsOver18True" />
+                            <label for="createIsOver18True">Yes</label>
+                        </div>
+                        <div class="ml-2">
+                            <input type="radio" name="age-confirm" id="createIsOver18False" />
+                            <label for="createIsOver18False">No</label></p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="container is-fluid mb-4 is-flex">
+                    <p><label for="title">Select Event Category</label>
+                    <div class="select is-rounded ml-2">
+                        <select id="createPartyTheme" style="background-color:#a66fa697">
+                            <option value="1" selected>costume party</option>
+                            <option value="2">birthday party</option>
+                            <option value="3">sports event</option>
+                            <option value="4">cocktail party</option>
+                            <option value="5">dinner party</option>
+                            <option value="6">christmas party</option>
+                            <option value="7">australia day</option>
+                            <option value="8">2023 nye</option>
+                        </select></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="container is-fluid mb-4">
+                    <p>  <label for="title">Event Date</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input is-rounded m-1" id="createPartyStartDate" type="date"
+                            style="background-color:#a66fa697"></p>
+                    </div>
+                </div>
+                <hr>
+            </form>
+        </section>
+        <footer class="modal-card-foot">
+            <button class="button is-rounded is-link" id="submitCreateParty">Create Party</button>
+            <button class="button is-rounded cancel-button" id="modalCancelBtn">Cancel</button>
+        </footer>
+    </div>
+</div>

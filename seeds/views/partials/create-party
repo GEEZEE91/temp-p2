@@ -1,0 +1,37 @@
+<form id="create-party-form" class="create-party-form">
+  <div class="container is-fluid mb-4">
+      <label for="title">Title:</label>
+      <div class="control" id="create-title">
+          <input class="input is-rounded m-1" type="text" style="background-color:#EEE6E6">
+      </div>
+  </div>
+  <div class="container is-fluid mb-4">
+      <div class="check-public">
+          <label for="public">Is this party public:</label>
+          <input type="checkbox" name="public" id="public-checkbox" />
+          <label for="private"> or private:</label>
+          <input type="checkbox" name="private" id="private-checkbox" />
+      </div>
+  </div>
+  <div class="container is-fluid mb-4">
+      <div class="check-age">
+          <p>Over 18:</p>
+          <input type="radio" name="age-confirm" id="18-true" />
+          <label for="18-true">Yes</label>
+          <input type="radio" name="age-confirm" id="18-false" />
+          <label for="18-false">No</label>
+      </div>
+  </div>
+  <div class="container is-fluid mb-4">
+      <label for="title">Theme:</label>
+      <div class="control" id="create-theme">
+          <input class="input is-rounded m-1" type="text" style="background-color:#EEE6E6">
+      </div>
+  </div>
+  <div class="container is-fluid mb-4">
+      <label for="title">Email:</label>
+      <div class="control has-icons-left has-icons-right">
+          <input class="input is-rounded m-1" type="email" style="background-color:#EEE6E6">
+      </div>
+  </div>
+</form>

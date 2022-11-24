@@ -1,0 +1,60 @@
+{{> navbar}}
+
+{{!-- signup form is here --}}
+<div class="columns is-centered">
+  <form class="signup-form column is-half-tablet">
+    <h1 class="form-header">Signup Form:</h1>
+    <div class="container is-fluid mb-4">
+      <label for="first-name-signup">First Name:</label>
+      <input class="input is-rounded m-1" type="text" placeholder="First Name" id="first-name-signup" />
+    </div>
+    <div class="container is-fluid mb-4">
+      <label for="last-name-signup">Last Name:</label>
+      <input class="input is-rounded m-1" type="text" placeholder="Last Name" id="last-name-signup" />
+    </div>
+    <div class="container is-fluid mb-4">
+      <label for="home-address">home address:</label>
+      <input class="input is-rounded m-1" type="text" id="address-signup" />
+    </div>
+    <div class="container is-fluid mb-4">
+      <label for="email-signup">email:</label>
+      <input class="input is-rounded m-1" type="text" id="email-signup" />
+    </div>
+    <div class="container is-fluid mb-4">
+      <label for="age-signup">age:</label>
+      <input class="input is-rounded m-1" type="text" id="age-signup" />
+    </div>
+    <div class="container is-fluid mb-4">
+      <label for="password-signup">password (min 4 characters):</label>
+      <input class="input is-rounded m-1" type="password" id="password-signup" />
+    </div>
+    <div class="container is-fluid mb-4">
+      <button class="button is-rounded m-1 is-link" id="signupSubmitBtn" type="submit">signup</button>
+    </div>
+  </form>
+
+  {{!-- login form is here --}}
+  <form class="login-form column is-half-tablet">
+    {{!-- <div class="column is-half"> --}}
+      <h1 class="form-header">Login Form:</h1>
+      <div class="container is-fluid mb-4">
+        <label for="email-login">email:</label>
+        <input class="input is-rounded m-1" type="text" id="email-login" />
+      </div>
+      <div class="container is-fluid mb-4">
+        <label for="password-login">password:</label>
+        <input class="input is-rounded m-1" type="password" id="password-login" />
+      </div>
+      <div class="container is-fluid mb-4">
+        <button class="button is-rounded m-1 is-link" id="loginSubmitBtn" type="submit">login</button>
+      </div>
+      {{!--
+    </div> --}}
+  </form>
+</div>
+
+
+
+
+<script src="/js/login.js"></script>
+<script src="/js/dashboard.js"></script>

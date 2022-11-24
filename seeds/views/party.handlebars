@@ -1,0 +1,52 @@
+
+
+<h1 class="has-text-centered is-size-1 is-size-3-mobile margin-top-2">Your {{party.theme.theme_description}} event details
+    </h1>
+<br>
+<div class="card column mx-auto is-two-thirds-tablet is-half-desktop is-one-third-widescreen">
+    <header class="card-header">
+        <p class="card-header-title is-centered">You named your EVENT: {{party.title}}</p>
+    </header>
+    <div class="card-image">
+        <figure class="image mx-auto">
+            <img src="/images/{{party.theme.theme_description}}.png" alt="{{theme.theme_description}}">
+        </figure>
+    </div>
+    <div class="card-content">
+        <div class="content">
+            Your EVENT is set to happen on {{format_date party.startdate}}.
+            <hr>
+            {{#if party.ispublic}}
+            Your EVENT is open to the public (not private).
+            <hr>
+            {{else}}
+            Your EVENT is private (not open to the public).
+            <hr>
+            {{/if}}
+            {{#if party.isover18}}
+            And you made your EVENT strictly 18+ years of age and older.<br>
+
+            <hr>
+            {{else}}
+            And you made your EVENT open to minors.
+
+            <hr>
+            {{/if}}
+            EVENT category selected '{{party.theme.theme_description}}', in keeping with
+            the photo above!
+        </div>
+
+    </div>
+
+    <div class="card-footer is-flex-direction-column">
+        <a href="" class="card-footer-item" id="editPartyBtn">Edit this EVENT's details. (JS LOGIC MISSING!)</a>
+        <a href="" class="card-footer-item" id="deletePartyBtn">Delete EVENT</a>
+        <a href="/dashboard" class="card-footer-item" id="goToDashboardBtn">Return to Dashboard</a>
+    </div>
+</div>
+
+{{!-- load the Javascript logic for party buttons --}}
+<script src="/js.save.js">  </script>
+<script src="/js/party-buttons.js"></script>
+<script src="/js/user-party-buttons.js"></script>
+<script src="/js/dashboard.js"></script>
